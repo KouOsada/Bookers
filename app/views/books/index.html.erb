@@ -28,24 +28,26 @@
 
 <h2>New book</h2>
 
-<% if @book.errors.any? %>
-  <div id="error_explanation">
-    
-    <h2>
-      <%= @book.errors.count %> errors prohibited this book from being saved:
-    </h2>
-    
-    <ul>
-      <% @book.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-    </ul>
-    
-  </div>
-<% end %>
-
-
+<!--投稿機能-->
 <%= form_with model:@book, local:true do |f| %>
+
+　<!--エラーメッセージ-->
+  <% if @book.errors.any? %>
+    
+    <div id="error_explanation">
+      <h2>
+        <%= @book.errors.count %> errors prohibited this book from being saved:
+      </h2>
+    
+      <ul>
+        <% @book.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+
+  <% end %>
+　<!--エラーメッセージここまで-->
 
   <div class="field">
     <label for="book_title">Title</label>
@@ -62,3 +64,4 @@
   </div>
 
 <% end %>
+<!--投稿機能ここまで-->
