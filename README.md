@@ -1,4 +1,4 @@
-# README
+# 「アプリケーションを完成させよう」課題２の格納リポジトリです
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
