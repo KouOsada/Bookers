@@ -34,7 +34,6 @@ class BooksController < ApplicationController
       flash[:success] = 'Book was successfully updated.'
       redirect_to book_path(@book)
     else
-      @book = Book.find(params[:id])
       render :edit
     end
     

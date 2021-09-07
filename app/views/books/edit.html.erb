@@ -3,6 +3,7 @@
 
 <%= form_with model:@book, local:true do |f| %>
 
+　<!--エラーメッセージ-->
   <% if @book.errors.any? %>
     
     <div id="error_explanation">
@@ -20,14 +21,15 @@
     </div>
     
   <% end %>
+  <!--エラーメッセージここまで-->
 
   <div class="field">
-    <label for="book_title">Title</label>
+    <%= f.label :title %>
     <%= f.text_field :title %>
   </div>
 
   <div class="field">
-    <label for="book_body">Body</label>
+    <%= f.label :body %>
     <%= f.text_area :body %>
   </div>
 
