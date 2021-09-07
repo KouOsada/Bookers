@@ -55,17 +55,34 @@ div
   display: block;
 }
 
+a
+{
+  color: #000;
+}
+
+a :visited
+{
+  color: #666;
+}
+
+a :hover
+{
+  color: #fff;
+  background-color: #000;
+}
+
 .field, .actions
 {
+  /*display: block;*/
   margin-bottom: 10px;
 }
 
-label
+label 
 {
   display: block;
 }
 
-#error_explanation 
+#error_explanation
 {
   width: 450px;
   border: 2px solid red;
@@ -75,7 +92,7 @@ label
   background-color: #f0f0f0
 }
 
-#error_explanation h2 
+#error_explanation h2
 {
   text-align: left;
   font-weight: bold;
@@ -87,13 +104,13 @@ label
   color: #fff
 }
 
-#error_explanation ul li 
+#error_explanation ul li
 {
   font-size: 12px;
   list-style: square;
 }
 
-.field_with_errors 
+.field_with_errors
 {
   padding: 2px;
   background-color: red;
